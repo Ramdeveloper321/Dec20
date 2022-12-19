@@ -1,0 +1,38 @@
+Screen1 As screen:
+
+    Label1 As label:
+        Height: =70
+        Size: =21
+        Text: ="Continent"
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    Label2 As label:
+        Height: =70
+        Size: =21
+        Text: ="Cities"
+        Width: =560
+        X: =40
+        Y: =318
+        ZIndex: =2
+
+    Dropdown1 As dropdown:
+        Height: =70
+        Items: =Distinct(tblcountries,Column1)
+        Size: =21
+        Width: =575
+        X: =40
+        Y: =142
+        ZIndex: =3
+
+    Dropdown2 As dropdown:
+        Height: =70
+        Items: =Distinct(Filter(tblcountries,Column1=Dropdown1.Selected.Result),Column2)
+        Size: =21
+        Width: =575
+        X: =40
+        Y: =456
+        ZIndex: =4
+
