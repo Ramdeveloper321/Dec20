@@ -50,6 +50,7 @@
         Item: =BrowseGallery1.Selected
         OnSuccess: =Back()
         Width: =Parent.Width
+        Y: =230
         ZIndex: =5
 
         "'Account Name_DataCard2' As typedDataCard.textualEditCard":
